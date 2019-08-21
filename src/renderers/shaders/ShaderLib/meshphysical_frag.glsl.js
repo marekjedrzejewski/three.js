@@ -8,8 +8,12 @@ uniform float metalness;
 uniform float opacity;
 
 #ifdef PHYSICAL
-	uniform float clearCoat;
-	uniform float clearCoatRoughness;
+	uniform float clearcoat;
+	uniform float clearcoatRoughness;
+#endif
+
+#ifdef USE_SHEEN
+	uniform vec3 sheen;
 #endif
 
 varying vec3 vViewPosition;
